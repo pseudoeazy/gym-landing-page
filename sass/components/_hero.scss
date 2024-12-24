@@ -1,0 +1,12 @@
+.hero {
+  border: 1px solid purple;
+
+  &__content {
+    @include gap-spacing(5.44rem);
+  }
+
+  &__left {
+    border: 1px solid yellow;
+    @include flex-initial(39.24rem);
+  }
+}

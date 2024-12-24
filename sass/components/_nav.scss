@@ -1,0 +1,36 @@
+.nav {
+  min-height: 7.5rem;
+  align-items: center;
+
+  &__logo {
+    border: 1px solid black;
+  }
+  &__links {
+    display: flex;
+    list-style-type: none;
+    color: $color-black;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    transition: font-weight 0.2s;
+
+    &:hover,
+    &:active {
+      font-weight: 800;
+    }
+  }
+}

@@ -2,7 +2,10 @@
 @import 'abstracts/mixins';
 @import 'base/reset';
 @import 'base/typography';
+@import 'layouts/grid';
 @import 'layouts/header';
 @import 'layouts/footer';
+@import 'components/nav';
+@import 'components/hero';
 @import 'components/button';
 @import 'pages/home';

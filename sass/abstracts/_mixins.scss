@@ -1,0 +1,33 @@
+@mixin flex-initial($width) {
+  flex: initial;
+  width: $width;
+}
+
+@mixin gap-spacing($horizontal-gap, $vertical-gap: 0, $wrap: wrap) {
+  gap: $vertical-gap $horizontal-gap;
+
+  @if $wrap == nowrap {
+    flex-wrap: $wrap;
+    gap: 0 $horizontal-gap;
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == phone {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media screen and (max-width: 799px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media screen and (min-width: 800px) {
+      @content;
+    }
+  }
+}

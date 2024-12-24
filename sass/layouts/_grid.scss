@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.column {
+  flex-basis: 100%;
+  border: 1px solid black;
+
+  @include respond-to(desktop) {
+    flex: 1;
+  }
+}
