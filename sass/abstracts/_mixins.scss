@@ -1,6 +1,6 @@
 @mixin flex-initial($width) {
   flex: initial;
-  width: $width;
+  flex-basis: $width;
 }
 
 @mixin gap-spacing($horizontal-gap, $vertical-gap: 0, $wrap: wrap) {
@@ -9,6 +9,13 @@
   @if $wrap == nowrap {
     flex-wrap: $wrap;
     gap: 0 $horizontal-gap;
+  }
+}
+
+@mixin zoomIn {
+  &:hover,
+  &:active {
+    transform: translateY(-1px) scale(1.1);
   }
 }
 

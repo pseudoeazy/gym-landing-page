@@ -1,5 +1,6 @@
 .hero {
-  border: 1px solid purple;
+  min-height: 56.25rem;
+  background-color: $color-grey;
 
   &__content {
     @include gap-spacing(5.44rem);

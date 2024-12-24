@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: $default-margin-left;
+  @include gap-spacing(0.62rem);
+
+  &-image {
+    display: inline-block;
+    border-radius: 50%;
+    width: 4.375rem;
+    height: 4.375rem;
+    background-color: $color-primary-dark;
+    transition: all 0.2s;
+    @include zoomIn;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    color: $color-brown-dark;
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: normal;
+
+    &--top {
+      text-transform: capitalize;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.125rem;
+    }
+
+    &--bottom {
+      font-size: 0.9375rem;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,36 +1,30 @@
 .nav {
   min-height: 7.5rem;
   align-items: center;
+  background-color: $color-grey-light;
 
-  &__logo {
-    border: 1px solid black;
-  }
   &__links {
     display: flex;
     list-style-type: none;
-    color: $color-black;
+
+    @include gap-spacing(2.5rem);
+  }
+
+  &__link {
     font-family: Montserrat;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-  }
-
-  &__list-item {
-    &:not(:last-child) {
-      margin-right: 2.5rem;
-    }
-  }
-
-  &__link {
+    color: $color-black;
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
-    transition: font-weight 0.2s;
+    transition: all 0.2s;
 
     &:hover,
     &:active {
-      font-weight: 800;
+      transform: translateY(-1px) scale(1.1);
     }
   }
 }
