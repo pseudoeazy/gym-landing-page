@@ -18,9 +18,13 @@ body {
   font-style: normal;
 }
 
-.container {
+.container, .page {
   max-width: 100rem;
   margin: 0 auto;
+}
+
+.page {
+  overflow: hidden;
 }
 
 .row {
@@ -105,12 +109,80 @@ body {
   background-color: #e4e4e4;
 }
 .hero__content {
+  min-height: 56.25rem;
   gap: 0 5.44rem;
 }
 .hero__left {
-  border: 1px solid yellow;
+  padding-top: 10.81rem;
+  padding-left: 13.44rem;
   flex: initial;
   flex-basis: 39.24rem;
+}
+.hero__header {
+  width: 25.8125rem;
+  margin-bottom: 0.94rem;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.hero__message {
+  width: 18.25rem;
+  margin-bottom: 2.5rem;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero__images {
+  padding-top: 9.5rem;
+  position: relative;
+}
+.hero__images--behind {
+  position: absolute;
+  top: 13.62rem;
+  left: 18.75rem;
+}
+
+.btn, .btn:link, .btn:visited {
+  width: 16.3125rem;
+  height: 4rem;
+  padding: 1.38rem 4.44rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  background: linear-gradient(100deg, #ec627c 29.54%, #ec627c 73.06%);
+  box-shadow: 0px 9px 35px 0px #ec627c;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scalex(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--pill {
+  border-radius: 1.9375rem;
+}
+
+.what-you-will-get {
+  min-height: 75rem;
+  background-color: #d6b6ab;
 }
 
 /*# sourceMappingURL=style.css.map */

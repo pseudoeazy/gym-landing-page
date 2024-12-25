@@ -3,11 +3,46 @@
   background-color: $color-grey;
 
   &__content {
+    min-height: 56.25rem;
     @include gap-spacing(5.44rem);
   }
 
   &__left {
-    border: 1px solid yellow;
+    padding-top: 10.81rem;
+    padding-left: $default-margin-left;
     @include flex-initial(39.24rem);
+  }
+
+  &__header {
+    width: 25.8125rem;
+    margin-bottom: 0.94rem;
+    color: $color-black;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  &__message {
+    width: 18.25rem;
+    margin-bottom: 2.5rem;
+    color: $color-black;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__images {
+    padding-top: 9.5rem;
+    position: relative;
+
+    &--behind {
+      position: absolute;
+      top: 13.62rem;
+      left: 18.75rem;
+    }
   }
 }
