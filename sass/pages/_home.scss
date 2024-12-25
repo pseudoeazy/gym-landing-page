@@ -1,4 +1,61 @@
-.what-you-will-get {
+.incentives {
   min-height: 75rem;
   background-color: $color-primary-dark;
+  padding: 3.12rem $default-margin-left;
+
+  &__header {
+    color: $color-brown;
+    font-family: Montserrat;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 3rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    @include gap-spacing(0, 1.56rem);
+  }
+
+  &__sub-header {
+    color: $color-brown;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @include gap-spacing(0.6rem, 0.6rem);
+    padding: 4rem;
+    background-color: $color-grey-dark;
+  }
+
+  &__item {
+    height: 18.3rem;
+    overflow: hidden;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    @include gap-spacing(0.6rem, 0.6rem);
+  }
 }

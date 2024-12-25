@@ -180,9 +180,58 @@ body {
   border-radius: 1.9375rem;
 }
 
-.what-you-will-get {
+.incentives {
   min-height: 75rem;
   background-color: #d6b6ab;
+  padding: 3.12rem 13.44rem;
+}
+.incentives__header {
+  color: #392a31;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 3rem;
+}
+.incentives__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem 0;
+}
+.incentives__sub-header {
+  color: #392a31;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.incentives__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0.6rem 0.6rem;
+  padding: 4rem;
+  background-color: #d9d9d9;
+}
+.incentives__item {
+  height: 18.3rem;
+  overflow: hidden;
+}
+.incentives__item:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.incentives__image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.incentives__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
