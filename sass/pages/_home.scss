@@ -59,3 +59,97 @@
     @include gap-spacing(0.6rem, 0.6rem);
   }
 }
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 25rem;
+  padding-left: 17.31rem;
+  padding-right: 17.31rem;
+  background-color: $color-grey;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  font-family: Montserrat;
+
+  &__message {
+    color: $color-black;
+    font-size: 2.5rem;
+    margin-bottom: 3.12rem;
+  }
+
+  &__name {
+    color: $color-brown-light;
+    font-size: 1.25rem;
+  }
+}
+
+.story {
+  min-height: 85.9375rem;
+
+  background-color: $color-primary-dark;
+  padding-left: $default-margin-left;
+  padding-right: 10.25rem;
+
+  &__content {
+    @include gap-spacing(1.88rem);
+    // max-width: 76.33rem;
+    border: 1px solid red;
+  }
+
+  &__image-box {
+    padding-top: 10.25rem;
+    max-width: 41.8rem;
+    border: 1px solid black;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &__info-container {
+    // width: 32.57rem;
+    border: 1px solid blue;
+    padding-top: 13.56rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    @include gap-spacing(0, 1.56rem);
+    margin-bottom: 3.12rem;
+  }
+
+  &__header {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__text {
+    color: $color-black;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &--mark {
+      color: $color-black;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: none;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+    }
+  }
+}

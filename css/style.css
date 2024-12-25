@@ -179,6 +179,9 @@ body {
 .btn--pill {
   border-radius: 1.9375rem;
 }
+.btn--rounded {
+  border-radius: 0.625rem;
+}
 
 .incentives {
   min-height: 75rem;
@@ -232,6 +235,87 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.6rem 0.6rem;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 25rem;
+  padding-left: 17.31rem;
+  padding-right: 17.31rem;
+  background-color: #e4e4e4;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  font-family: Montserrat;
+}
+.quote__message {
+  color: #000;
+  font-size: 2.5rem;
+  margin-bottom: 3.12rem;
+}
+.quote__name {
+  color: #b19c83;
+  font-size: 1.25rem;
+}
+
+.story {
+  min-height: 85.9375rem;
+  background-color: #d6b6ab;
+  padding-left: 13.44rem;
+  padding-right: 10.25rem;
+}
+.story__content {
+  gap: 0 1.88rem;
+  border: 1px solid red;
+}
+.story__image-box {
+  padding-top: 10.25rem;
+  max-width: 41.8rem;
+  border: 1px solid black;
+}
+.story__image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.story__info-container {
+  border: 1px solid blue;
+  padding-top: 13.56rem;
+}
+.story__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem 0;
+  margin-bottom: 3.12rem;
+}
+.story__header {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.story__text {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.story__text--mark {
+  color: #000;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
 /*# sourceMappingURL=style.css.map */
