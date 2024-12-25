@@ -1,0 +1,16 @@
+.footer {
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $default-margin-left;
+  padding-right: $default-margin-left;
+  min-height: 9.875rem;
+  background-color: $color-deep-brown;
+  color: $color-white;
+
+  &__title {
+    color: $color-white;
+  }
+  &__no-title {
+    display: none;
+  }
+}

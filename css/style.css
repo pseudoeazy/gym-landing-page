@@ -41,6 +41,22 @@ body {
   }
 }
 
+.footer {
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 13.44rem;
+  padding-right: 13.44rem;
+  min-height: 9.875rem;
+  background-color: #292229;
+  color: #fff;
+}
+.footer__title {
+  color: #fff;
+}
+.footer__no-title {
+  display: none;
+}
+
 .nav {
   min-height: 7.5rem;
   align-items: center;
@@ -181,6 +197,11 @@ body {
 }
 .btn--rounded {
   border-radius: 0.625rem;
+}
+
+.contact {
+  min-height: 52.93rem;
+  background-color: #292229;
 }
 
 .incentives {
