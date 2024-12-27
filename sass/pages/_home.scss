@@ -93,17 +93,18 @@
   background-color: $color-primary-dark;
   padding-left: $default-margin-left;
   padding-right: 10.25rem;
+  padding-bottom: 9.4rem;
 
   &__content {
     @include gap-spacing(1.88rem);
     // max-width: 76.33rem;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
 
   &__image-box {
     padding-top: 10.25rem;
     max-width: 41.8rem;
-    border: 1px solid black;
+    // border: 1px solid black;
   }
 
   &__image {
@@ -113,8 +114,8 @@
   }
 
   &__info-container {
-    // width: 32.57rem;
-    border: 1px solid blue;
+    // max-width: 32.57rem;
+    // border: 1px solid blue;
     padding-top: 13.56rem;
   }
 
@@ -123,6 +124,10 @@
     flex-direction: column;
     @include gap-spacing(0, 1.56rem);
     margin-bottom: 3.12rem;
+  }
+
+  &__btn {
+    width: 24.45rem;
   }
 
   &__header {

@@ -165,7 +165,6 @@ body {
 }
 
 .btn, .btn:link, .btn:visited {
-  width: 16.3125rem;
   height: 4rem;
   padding: 1.38rem 4.44rem;
   text-decoration: none;
@@ -202,6 +201,25 @@ body {
 .contact {
   min-height: 52.93rem;
   background-color: #292229;
+  background-image: linear-gradient(to right bottom, #292229, #413038);
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.contact__side {
+  flex-grow: 0;
+  justify-content: flex-end;
+  max-width: 35rem;
+  border: 1px solid red;
+  display: flex;
+  padding: 0;
+}
+.contact__image {
+  display: block;
+  border: 1px solid green;
+}
+.contact__content {
+  border: 1px solid yellow;
 }
 
 .incentives {
@@ -288,15 +306,14 @@ body {
   background-color: #d6b6ab;
   padding-left: 13.44rem;
   padding-right: 10.25rem;
+  padding-bottom: 9.4rem;
 }
 .story__content {
   gap: 0 1.88rem;
-  border: 1px solid red;
 }
 .story__image-box {
   padding-top: 10.25rem;
   max-width: 41.8rem;
-  border: 1px solid black;
 }
 .story__image {
   width: 100%;
@@ -304,7 +321,6 @@ body {
   object-fit: fill;
 }
 .story__info-container {
-  border: 1px solid blue;
   padding-top: 13.56rem;
 }
 .story__info {
@@ -312,6 +328,9 @@ body {
   flex-direction: column;
   gap: 1.56rem 0;
   margin-bottom: 3.12rem;
+}
+.story__btn {
+  width: 24.45rem;
 }
 .story__header {
   color: #000;

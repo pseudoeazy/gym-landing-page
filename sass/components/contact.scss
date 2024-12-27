@@ -1,4 +1,31 @@
 .contact {
   min-height: 52.93rem;
   background-color: $color-deep-brown;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-deep-brown,
+    $color-brown-dark
+  );
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  &__side {
+    // @include flex-initial(35rem);
+    flex-grow: 0;
+    justify-content: flex-end;
+    max-width: 35rem;
+    border: 1px solid red;
+    display: flex;
+    padding: 0;
+  }
+  &__image {
+    display: block;
+    border: 1px solid green;
+  }
+
+  &__content {
+    border: 1px solid yellow;
+    // @include flex-initial(60.81rem);
+  }
 }
